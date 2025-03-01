@@ -1,0 +1,34 @@
+.featuredShow {
+    width: 22%;
+    height: 500px;
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.featuredShow > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.movieTitle {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(6, 7, 7, 0.5);
+    position: absolute;
+    align-self: flex-end;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: height 0.3s ease-in-out; /* Smooth transition */
+}
+
+.featuredShow:hover .movieTitle {
+    height: 200px; /* Expands when hovering on img or movieTitle */
+}
